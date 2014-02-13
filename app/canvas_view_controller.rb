@@ -1,3 +1,0 @@
-class CanvasViewController < UIView
-
-end
