@@ -1,13 +1,9 @@
 class AppDelegate
-  def window
-    @window
-  end
-
-  def setWindow(window)
-    @window = window
-  end
-
-  def application(application, didFinishLaunchingWithOptions:launchOptions)
+ 
+    def application(application, didFinishLaunchingWithOptions:launchOptions)
+    @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
+    @window.rootViewController = MainViewController.alloc.init
+    @window.makeKeyAndVisible
     true
   end
 end
